@@ -47,7 +47,7 @@ function Player() {
       }
 
       spotifyApi.getMyCurrentPlaybackState().then((data) => {
-          if(data.body.is_playing){
+          if(data?.body?.is_playing){
             setIsPlaying(true)
           }else{
             setIsPlaying(false)
