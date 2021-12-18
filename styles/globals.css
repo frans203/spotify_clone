@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply text-white hover:scale-125 transform cursor-pointer h-5 w-5 transition-all duration-100 ease-out
+  }
+}
